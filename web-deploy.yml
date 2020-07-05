@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: production-frontend
+  template:
+    metadata:
+      name: myfrontend-pod
+      labels:
+        env: production-frontend
+    spec:
+      volumes:
+        - name: front-vol
+          persistentVolumeClaim:
+            claimName: mypvc1 
+      containers:
+      - name: frontend
+        image: vimal13/apache-webserver-php
+        volumeMounts:
+          - mountPath: /var/www/html
+            name: front-vol

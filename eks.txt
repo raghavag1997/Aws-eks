@@ -1,0 +1,50 @@
+First download ekstcl program 
+
+Done with eksctl program
+
+
+
+1 Create one user with admin power in aws
+
+Done with creating user 
+
+
+2 configure aws command with new user
+
+3 create aws cluster.yml file for configuring cluster
+  done
+
+4 create kubectl config file for communication with aws cluster
+
+done
+
+5 creating first deployment top of aws eks cluster
+
+done
+
+6 expose also
+
+done
+
+7 using pvc to create ebs 
+
+done 
+
+8 attach also 
+
+done
+
+
+9 creating my own storage class
+
+done
+
+10 configure pvc to use that storage class
+
+done
+
+11 create app that use that pvc 
+
+done
+
+
